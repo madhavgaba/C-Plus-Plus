@@ -9,7 +9,7 @@
 #include <iostream>
 using namespace std;
 
-#define MAX 10000000
+const int MAX = 1000000
 
 int primes[MAX];
 
@@ -24,7 +24,7 @@ void sieve(int N)
   primes[1] = 1;
   for(int i=2;i<=N;i++)
     {
-      if(primes[i] == 1) continue;
+      if(!primes[i])
       for(int j=i+i;j<=N;j+=i)
 	primes[j] = 1;
     }
