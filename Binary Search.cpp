@@ -2,7 +2,7 @@
 using namespace std;
 int binary_search(int a[],int l,int r,int key){
 	while(l<=r){
-		int m = l+(r-l)/2;
+		int m = l+(r-l)>>1;
 		if(key==a[m])
 			return m;
 		else if(key<a[m])
