@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#define MAX 4000000
+const int MAX = 4000000
 using namespace std;
 typedef long long ll;
 void ConsTree(ll arr[],ll segtree[],ll low,ll high,ll pos)
